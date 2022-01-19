@@ -3,5 +3,5 @@ export interface NavMenuItem {
   order: number;
   icon: string;
   path: string;
-  children: Array<NavMenuItem>;
+  children: Array<NavMenuItem> | undefined | null;
 }

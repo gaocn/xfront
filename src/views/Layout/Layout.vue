@@ -2,7 +2,7 @@
   <el-container class="container">
     <el-aside class="container-aside">
       <el-scrollbar>
-        <main-menu mode="vertical" :is-collapse="isCollapse" />
+        <main-menu :is-collapse="isCollapse" />
       </el-scrollbar>
     </el-aside>
     <el-container>
