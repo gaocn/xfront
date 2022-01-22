@@ -1,7 +1,9 @@
 export interface NavMenuItem {
-  name: string;
-  order: number;
-  icon: string;
+  name?: string;
+  order?: number;
+  icon?: string;
   path: string;
-  children: Array<NavMenuItem> | undefined | null;
+  hidden?: boolean | undefined;
+  children?: Array<NavMenuItem> | undefined | null;
+  noShowChildren?: boolean;
 }

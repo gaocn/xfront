@@ -2,7 +2,7 @@
   <el-container class="container">
     <el-aside class="container-aside">
       <el-scrollbar>
-        <main-menu :is-collapse="isCollapse" />
+        <sidebar :is-collapse="isCollapse" />
       </el-scrollbar>
     </el-aside>
     <el-container>
@@ -20,8 +20,8 @@
 </template>
 <script lang="ts" setup>
 import MainApp from './components/Main.vue';
-import MainMenu from './components/MainMenu.vue';
 import TagsView from './components/TagsView.vue';
+import Sidebar from './components/sidebar/index.vue';
 import { ref } from 'vue';
 const isCollapse = ref(false);
 const collapse = () => {
